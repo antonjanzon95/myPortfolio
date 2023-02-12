@@ -49,4 +49,14 @@
     hover:rounded-xl transition-all duration-300 ease-linear
     rounded-3xl cursor-pointer;
   }
+
+  .javascript-icon {
+    @apply relative flex items-center justify-center
+    h-7 w-7 mx-0 bg-black;
+  }
+
+  .css-icon {
+    @apply relative flex items-center justify-center
+    h-7 w-7 mx-0 bg-transparent;
+  }
 }

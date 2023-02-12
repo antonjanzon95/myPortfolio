@@ -9,10 +9,10 @@ import Projects from "./components/projects";
 function App() {
   return (
     <div className="">
-      <header className="h-24 bg-blue-700 hidden laptop:flex items-center fixed top-0 w-full">
+      <header className="h-24 bg-blue-700 hidden laptop:flex items-center fixed top-0 w-full z-20">
         <Header />
       </header>
-      <header className="h-16 bg-blue-700 block laptop:hidden fixed top-0 w-full">
+      <header className="h-16 bg-blue-700 block laptop:hidden fixed top-0 w-full z-20">
         <MobileHeader />
       </header>
 
