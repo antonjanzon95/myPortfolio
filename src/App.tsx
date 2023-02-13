@@ -5,6 +5,7 @@ import Main from "./components/main";
 import About from "./components/about";
 import SideBar from "./components/sidebar";
 import Projects from "./components/projects";
+import Skills from "./components/skills";
 
 function App() {
   return (
@@ -25,7 +26,9 @@ function App() {
       <section className="w-full bg-blue-700 text-slate-100">
         <Projects />
       </section>
-      <section className="w-full bg-slate-100 text-blue-700"></section>
+      <section className="w-full bg-slate-100 text-blue-700">
+        <Skills />
+      </section>
       <SideBar />
     </div>
   );

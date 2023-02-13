@@ -55,8 +55,13 @@
     h-7 w-7 mx-0 bg-black;
   }
 
-  .css-icon {
+  .bg-transparent-icon {
     @apply relative flex items-center justify-center
     h-7 w-7 mx-0 bg-transparent;
+  }
+
+  .bg-white-icon {
+    @apply relative flex items-center justify-center
+    h-7 w-7 mx-0 bg-transparent bg-white;
   }
 }

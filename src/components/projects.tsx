@@ -1,11 +1,6 @@
 import { SiJavascript, SiHtml5 } from "react-icons/si";
 import { FaCss3, FaSass } from "react-icons/fa";
-import React from "react";
-
-interface Props {
-  icon: React.ReactElement;
-  iconType: string;
-}
+import TechnologyIcon from "./techIcon";
 
 const Projects = () => {
   return (
@@ -13,16 +8,16 @@ const Projects = () => {
       <div className="flex justify-center">
         <h2 className="text-center myHeadingsSlate">Projects</h2>
       </div>
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center gap-6">
         <a
           href="https://antonjanzon95.github.io/Donut-Webshop/"
           target="_blank"
-          className="mt-6 block max-w-sm bg-slate-100 rounded-lg shadow hover:bg-slate-200 hover:scale-105 transition-all duration-300"
+          className="mt-6 block max-w-[340px] laptop:max-w-sm bg-slate-100 rounded-lg shadow hover:bg-slate-200 hover:scale-105 transition-all duration-300"
         >
           <img
             src="public/munkar.png"
             alt="Donut webshop"
-            className="rounded-t-lg max-h-52"
+            className="rounded-t-lg h-[200px]"
             width={384}
             height={200}
           />
@@ -36,15 +31,15 @@ const Projects = () => {
             <div className="flex gap-1 items-center justify-end my-0 mt-6">
               <TechnologyIcon
                 icon={<SiHtml5 size={28} color="#f05c2a" />}
-                iconType="css-icon"
+                iconType="bg-transparent-icon"
               />
               <TechnologyIcon
                 icon={<FaCss3 size={28} color="#1774bb" />}
-                iconType="css-icon"
+                iconType="bg-transparent-icon"
               />
               <TechnologyIcon
                 icon={<FaSass size={28} color="#c76494" />}
-                iconType="css-icon"
+                iconType="bg-transparent-icon"
               />
               <TechnologyIcon
                 icon={<SiJavascript size={28} color="yellow" />}
@@ -57,12 +52,12 @@ const Projects = () => {
         <a
           href="https://incomparable-seahorse-0f5220.netlify.app/"
           target="_blank"
-          className="mt-6 block max-w-sm bg-slate-100 rounded-lg shadow hover:bg-slate-200 hover:scale-105 transition-all duration-300"
+          className="block max-w-[340px] laptop:max-w-sm bg-slate-100 rounded-lg shadow hover:bg-slate-200 hover:scale-105 transition-all duration-300"
         >
           <img
             src="public/quiz.png"
             alt="Quiz web application"
-            className="rounded-t-lg max-h-52"
+            className="rounded-t-lg h-[200px]"
             width={384}
             height={200}
           />
@@ -77,15 +72,15 @@ const Projects = () => {
             <div className="flex gap-1 items-center justify-end my-0 mt-6">
               <TechnologyIcon
                 icon={<SiHtml5 size={28} color="#f05c2a" />}
-                iconType="css-icon"
+                iconType="bg-transparent-icon"
               />
               <TechnologyIcon
                 icon={<FaCss3 size={28} color="#1774bb" />}
-                iconType="css-icon"
+                iconType="bg-transparent-icon"
               />
               <TechnologyIcon
                 icon={<FaSass size={28} color="#c76494" />}
-                iconType="css-icon"
+                iconType="bg-transparent-icon"
               />
               <TechnologyIcon
                 icon={<SiJavascript size={28} color="yellow" />}
@@ -98,10 +93,10 @@ const Projects = () => {
         <a
           href="https://resonant-tulumba-7148cf.netlify.app/"
           target="_blank"
-          className="mt-6 block max-w-sm bg-slate-100 rounded-lg shadow hover:bg-slate-200 hover:scale-105 transition-all duration-300"
+          className="block max-w-[340px] laptop:max-w-sm bg-slate-100 rounded-lg shadow hover:bg-slate-200 hover:scale-105 transition-all duration-300"
         >
           <img
-            className="rounded-t-lg max-h-52"
+            className="rounded-t-lg h-[200px]"
             src="public/nothingPhone.png"
             alt="Phone advert web app"
             width={384}
@@ -115,15 +110,15 @@ const Projects = () => {
             <div className="flex gap-1 items-center justify-end my-0 mt-6">
               <TechnologyIcon
                 icon={<SiHtml5 size={28} color="#f05c2a" />}
-                iconType="css-icon"
+                iconType="bg-transparent-icon"
               />
               <TechnologyIcon
                 icon={<FaCss3 size={28} color="#1774bb" />}
-                iconType="css-icon"
+                iconType="bg-transparent-icon"
               />
               <TechnologyIcon
                 icon={<FaSass size={28} color="#c76494" />}
-                iconType="css-icon"
+                iconType="bg-transparent-icon"
               />
               <TechnologyIcon
                 icon={<SiJavascript size={28} color="yellow" />}
@@ -134,36 +129,41 @@ const Projects = () => {
         </a>
 
         <a
-          href=""
-          className="mt-6 block max-w-sm p-6 bg-slate-100 border border-gray-200 rounded-lg shadow hover:bg-slate-200 hover:scale-105 transition-all duration-300"
+          href="https://inspiring-fairy-7062cd.netlify.app/"
+          target="_blank"
+          className="block max-w-[340px] laptop:max-w-sm bg-slate-100 rounded-lg shadow hover:bg-slate-200 hover:scale-105 transition-all duration-300"
         >
-          <img src="" alt="" />
-          <h3 className="mb-2 text-xl font-bold tracking-tight text-slate-900 dark:text-white">
-            To The Moon!
-          </h3>
-          <p className="font-normal text-slate-700">Design project.</p>
-          <div className="flex gap-1 items-center justify-end my-0 mt-6">
-            <TechnologyIcon
-              icon={<SiHtml5 size={28} color="#f05c2a" />}
-              iconType="css-icon"
-            />
-            <TechnologyIcon
-              icon={<FaCss3 size={28} color="#1774bb" />}
-              iconType="css-icon"
-            />
-            <TechnologyIcon
-              icon={<FaSass size={28} color="#c76494" />}
-              iconType="css-icon"
-            />
+          <img
+            src="public/moon.jpg"
+            alt="Astronaut website"
+            className="rounded-t-lg h-[200px]"
+            width={384}
+            height={200}
+          />
+          <div className="p-6">
+            <h3 className="mb-2 text-xl font-bold tracking-tight text-slate-900 dark:text-white">
+              To The Moon!
+            </h3>
+            <p className="font-normal text-slate-700">Design project.</p>
+            <div className="flex gap-1 items-center justify-end my-0 mt-6">
+              <TechnologyIcon
+                icon={<SiHtml5 size={28} color="#f05c2a" />}
+                iconType="bg-transparent-icon"
+              />
+              <TechnologyIcon
+                icon={<FaCss3 size={28} color="#1774bb" />}
+                iconType="bg-transparent-icon"
+              />
+              <TechnologyIcon
+                icon={<FaSass size={28} color="#c76494" />}
+                iconType="bg-transparent-icon"
+              />
+            </div>
           </div>
         </a>
       </div>
     </div>
   );
 };
-
-const TechnologyIcon: React.FC<Props> = ({ icon, iconType }) => (
-  <div className={`${iconType}`}>{icon}</div>
-);
 
 export default Projects;

@@ -18,7 +18,7 @@ const About: React.FC<Props> = () => {
             <div className="w-full flex justify-center">
               <h2 className="myHeadingsBlue">About</h2>
             </div>
-            <p className="mt-6 text-sm text-justify">
+            <p className="mt-6 text-justify">
               I am a student of Front End Development at Medieinstitutet in
               Sweden and I am actively seeking an internship opportunity from
               October 5th to December 29th. I am open to various options such as
