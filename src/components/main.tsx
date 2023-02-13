@@ -7,8 +7,8 @@ const Main: React.FC<Props> = () => {
     <div className="container px-6 mx-auto text-slate-100">
       <div className="laptop:flex">
         <div className="flex justify-center laptop:block laptop:w-2/4">
-          <h1 className="text-8xl">
-            HE<span className="block">LLO.</span>
+          <h1 className="text-8xl uppercase">
+            Wel<span className="block">come.</span>
           </h1>
         </div>
         <div className="mt-12 laptop:mt-0 laptop:w-2/4 text-center">
