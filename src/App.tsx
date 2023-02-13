@@ -17,7 +17,7 @@ function App() {
         <MobileHeader />
       </header>
 
-      <main className="pt-16 laptop:pt-24 w-full bg-blue-700 text-slate-100">
+      <main className="w-full bg-blue-700 text-slate-100">
         <Main />
       </main>
       <section className="w-full bg-slate-100">
