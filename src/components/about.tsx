@@ -34,8 +34,8 @@ const About: React.FC<Props> = () => {
         <div className="laptop:w-1/3">
           <p className="mb-2">
             <em>
-              I am actively seeking an internship opportunity from October 5th
-              to December 29th.
+              I am actively seeking an internship opportunity from October 23 to
+              December 29.
             </em>
           </p>
           <p className="mb-2 text-justify">
