@@ -8,72 +8,83 @@ import {
 } from "react-icons/si";
 import { FaCss3, FaSass, FaReact } from "react-icons/fa";
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    entry.target.classList.toggle("show", entry.isIntersecting);
+  });
+});
+
+const skillIcons = document.querySelectorAll("li");
+skillIcons.forEach((icon) => {
+  observer.observe(icon);
+});
+
 const Skills = () => {
   return (
     <div className="container p-6 mx-auto relative">
       <div className="flex justify-center">
-        <h2 className="text-center myHeadingsBlue mb-6">Skills</h2>
+        <h2 className="myHeadingsBlue my-6">Skills</h2>
       </div>
 
-      <div className="flex gap-2 flex-col laptop:flex-row justify-center items-center">
-        <div className="laptop:w-2/4">
+      <div className="my-6 flex gap-2 flex-col laptop:flex-row justify-center items-center">
+        <div className="laptop:w-2/4 flex flex-col justify-center items-center">
           <ul className="list-none flex flex-col gap-2 w-32">
-            <li className="flex gap-2">
+            <li className="fade flex gap-4 items-center">
               <TechnologyIcon
-                icon={<SiHtml5 size={28} color="#f05c2a" />}
+                icon={<SiHtml5 size={44} color="#f05c2a" />}
                 iconType="bg-transparent-icon"
               />
               HTML
             </li>
-            <li className="flex gap-2">
+            <li className="fade flex gap-4 items-center">
               <TechnologyIcon
-                icon={<FaCss3 size={28} color="#1774bb" />}
+                icon={<FaCss3 size={44} color="#1774bb" />}
                 iconType="bg-transparent-icon"
               />
               CSS
             </li>
-            <li className="flex gap-2">
+            <li className="fade flex gap-4 items-center">
               <TechnologyIcon
-                icon={<FaSass size={28} color="#c76494" />}
+                icon={<FaSass size={44} color="#c76494" />}
                 iconType="bg-transparent-icon"
               />
               SASS
             </li>
-            <li className="flex gap-2">
+            <li className="fade flex gap-4 items-center">
               <TechnologyIcon
-                icon={<SiJavascript size={28} color="yellow" />}
-                iconType="javascript-icon"
+                icon={<SiJavascript size={44} color="yellow" />}
+                iconType="javascript-icon2"
               />
               JavaScript
             </li>
           </ul>
         </div>
-        <div className="laptop:w-2/4">
+        <div className="laptop:w-2/4 flex flex-col justify-center items-center">
           <ul className="list-none flex flex-col gap-2 w-32">
-            <li className="flex gap-2">
+            <li className="fade flex gap-4 items-center">
               <TechnologyIcon
-                icon={<SiTypescript size={28} color="#0076c6" />}
+                icon={<SiTypescript size={44} color="#0076c6" />}
                 iconType="bg-white-icon"
               />
               TypeScript
             </li>
-            <li className="flex gap-2">
+            <li className="fade flex gap-4 items-center">
               <TechnologyIcon
-                icon={<FaReact size={28} color="#5ed3f3" />}
+                icon={<FaReact size={44} color="#5ed3f3" />}
                 iconType="bg-transparent-icon"
               />
               React
             </li>
-            <li className="flex gap-2">
+            <li className="fade flex gap-4 items-center">
               <TechnologyIcon
-                icon={<SiJest size={28} color="#bf3b16" />}
+                icon={<SiJest size={44} color="#bf3b16" />}
                 iconType="bg-transparent-icon"
               />
               Jest
             </li>
-            <li className="flex gap-2">
+            <li className="fade flex gap-4 items-center">
               <TechnologyIcon
-                icon={<SiCypress size={28} color="#383838" />}
+                icon={<SiCypress size={44} color="#383838" />}
                 iconType="bg-transparent-icon"
               />
               Cypress

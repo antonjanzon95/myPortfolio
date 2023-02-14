@@ -14,6 +14,7 @@
   display: inline-block;
   padding-bottom: 3px;
   position: relative;
+  font-weight: 700;
 }
 .myHeadingsBlue:before {
   content: "";
@@ -31,6 +32,7 @@
   display: inline-block;
   padding-bottom: 3px;
   position: relative;
+  font-weight: 700;
 }
 .myHeadingsSlate:before {
   content: "";
@@ -40,6 +42,24 @@
   bottom: 0;
   left: 25%;
   border-bottom: 2px solid #f1f5f9;
+}
+
+.pic {
+  border: double 20px transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(white, white),
+    /*here must be*/ linear-gradient(to right, #2563eb, #581c87); /*both gradients*/
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.fade {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.fade.show {
+  opacity: 1;
 }
 
 @layer components {
@@ -55,13 +75,18 @@
     h-7 w-7 mx-0 bg-black;
   }
 
+  .javascript-icon2 {
+    @apply relative flex items-center justify-center
+    h-11 w-11 mx-0 bg-black;
+  }
+
   .bg-transparent-icon {
     @apply relative flex items-center justify-center
-    h-7 w-7 mx-0 bg-transparent;
+    h-11 w-11 mx-0 bg-transparent;
   }
 
   .bg-white-icon {
     @apply relative flex items-center justify-center
-    h-7 w-7 mx-0 bg-transparent bg-white;
+    h-11 w-11 mx-0 bg-transparent bg-white;
   }
 }

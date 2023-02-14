@@ -4,9 +4,9 @@ interface Props {}
 
 const Main: React.FC<Props> = () => {
   return (
-    <div className="min-h-screen laptop:h-screen container px-6 mx-auto text-slate-100">
-      <div className="laptop:flex h-full">
-        <div className="pt-20 laptop:mt-0 flex justify-center items-center laptop:w-2/4">
+    <div className="min-h-screen laptop:h-screen container mx-auto pt-16 laptop:pt-24 flex flex-col justify-end laptop:block relative">
+      <div className="laptop:flex laptop:flex-row h-full">
+        <div className="flex justify-center items-center laptop:w-2/4">
           <h1 className="text-8xl uppercase">
             Wel<span className="block">come.</span>
           </h1>
