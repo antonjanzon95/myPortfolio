@@ -16,7 +16,7 @@ const Projects = () => {
             className="block max-w-[340px] laptop:max-w-sm bg-slate-100 shadow hover:bg-slate-200 hover:scale-105 transition-all duration-300"
           >
             <img
-              src="public/munkar.png"
+              src="munkar.png"
               alt="Donut webshop"
               className="h-[200px]"
               width={384}
@@ -56,7 +56,7 @@ const Projects = () => {
             className="block max-w-[340px] laptop:max-w-sm bg-slate-100 shadow hover:bg-slate-200 hover:scale-105 transition-all duration-300"
           >
             <img
-              src="public/quiz.png"
+              src="quiz.png"
               alt="Quiz web application"
               className="h-[200px]"
               width={384}
@@ -100,7 +100,7 @@ const Projects = () => {
           >
             <img
               className="h-[200px]"
-              src="public/nothingPhone.png"
+              src="nothingPhone.png"
               alt="Phone advert web app"
               width={384}
               height={200}
@@ -137,7 +137,7 @@ const Projects = () => {
             className="block max-w-[340px] laptop:max-w-sm bg-slate-100 shadow hover:bg-slate-200 hover:scale-105 transition-all duration-300"
           >
             <img
-              src="public/moon.jpg"
+              src="moon.jpg"
               alt="Astronaut website"
               className="h-[200px]"
               width={384}
