@@ -10,7 +10,7 @@ const About: React.FC<Props> = () => {
       </div>
       <div className="flex flex-col gap-6 laptop:flex-row laptop:items-center laptop:gap-0 w-full">
         <div className="bg-slate-50 laptop:flex laptop:w-1/3">
-          <p className="mt-6 text-justify">
+          <p className="mt-6">
             I am a student of Front End Development at Medieinstitutet in
             Sweden. My passion for technology and staying up-to-date with the
             latest industry standards drives me to continuously learn and
@@ -36,7 +36,7 @@ const About: React.FC<Props> = () => {
         </div>
         <div className="laptop:w-1/3">
           <p className="mb-2"></p>
-          <p className="mb-2 text-justify">
+          <p className="mb-2">
             I understand the importance of hands-on experience in the field and
             am eager to apply the skills I have learned in a real-world setting.
             I am open to various work arrangements, including in-house, hybrid,
