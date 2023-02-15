@@ -2,7 +2,7 @@ interface Props {}
 
 const Header: React.FC<Props> = () => {
   return (
-    <nav className="relative w-full text-slate-100 flex justify-end items-center">
+    <nav className="relative w-full flex justify-end items-center">
       <ul className="flex text-sm gap-12 items-center pr-8">
         <li className="hover:text-slate-400">
           <a className="" href="">

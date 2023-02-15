@@ -12,28 +12,28 @@ import MainMobile from "./components/mainMobile";
 function App() {
   return (
     <div className="">
-      <header className="h-24 bg-blue-700 hidden laptop:flex laptop:items-center fixed top-0 w-full z-20">
+      <header className="h-24 bg-gray-900 text-orange-500 hidden laptop:flex laptop:items-center fixed top-0 w-full z-20">
         <Header />
       </header>
-      <header className="h-16 bg-blue-700 block laptop:hidden fixed top-0 w-full z-20">
+      <header className="h-16 bg-gray-900 text-orange-500 block laptop:hidden fixed top-0 w-full z-20">
         <MobileHeader />
       </header>
-      <main className="hidden laptop:block w-full bg-gradient-to-b from-blue-700 to-blue-600 text-slate-100">
+      <main className="hidden laptop:block w-full bg-gradient-to-b from-gray-900 to-gray-800 text-orange-500">
         <Main />
       </main>
-      <main className="block laptop:hidden w-full bg-gradient-to-b from-blue-700 to-blue-600 text-slate-100">
+      <main className="block laptop:hidden w-full bg-gradient-to-b from-gray-900 to-gray-800 text-orange-500">
         <MainMobile />
       </main>
-      <section className="w-full bg-slate-50">
+      <section className="w-full bg-gray-100 text-gray-800">
         <About />
       </section>
-      <section className="w-full bg-blue-600 text-slate-100">
+      <section className="w-full bg-gray-800 text-gray-100">
         <Projects />
       </section>
-      <section className="w-full bg-slate-100 text-blue-700">
+      <section className="w-full bg-gray-100 text-gray-800">
         <Skills />
       </section>
-      <section className="w-full bg-blue-700 text-slate-100">
+      <section className="w-full bg-gray-800 text-gray-100">
         <Contact />
       </section>
       <SideBar />

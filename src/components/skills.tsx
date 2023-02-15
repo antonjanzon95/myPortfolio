@@ -23,7 +23,7 @@ const Skills = () => {
   return (
     <div className="container p-6 mx-auto relative">
       <div className="flex justify-center">
-        <h2 className="myHeadingsBlue my-6">Skills</h2>
+        <h2 className="myHeadingsGray my-6">Skills</h2>
       </div>
 
       <div className="my-6 flex gap-2 flex-col laptop:flex-row justify-center items-center">

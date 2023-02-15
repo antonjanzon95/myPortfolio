@@ -4,12 +4,12 @@ import TechnologyIcon from "./techIcon";
 
 const Projects = () => {
   return (
-    <div className="container p-6 mx-auto relative">
+    <div className="container p-6 mx-auto relative max-w-[1024px]">
       <div className="flex justify-center">
-        <h2 className="my-6 myHeadingsSlate">Projects</h2>
+        <h2 className="my-4 myHeadingsSlate text-orange-500">Projects</h2>
       </div>
-      <div className="flex flex-col items-center justify-center gap-6">
-        <div className="flex flex-col laptop:flex-row gap-6">
+      <div className="my-6 flex flex-col items-center justify-center gap-10">
+        <div className="flex flex-col laptop:flex-row laptop:justify-center gap-10">
           <a
             href="https://antonjanzon95.github.io/Donut-Webshop/"
             target="_blank"
@@ -92,7 +92,7 @@ const Projects = () => {
           </a>
         </div>
 
-        <div className="flex flex-col laptop:flex-row gap-6">
+        <div className="flex flex-col laptop:flex-row gap-10">
           <a
             href="https://resonant-tulumba-7148cf.netlify.app/"
             target="_blank"

@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-.myHeadingsBlue {
+.myHeadingsGray {
   font-size: 1.5rem /* 24px */;
   line-height: 2rem /* 32px */;
   display: inline-block;
@@ -16,14 +16,14 @@
   position: relative;
   font-weight: 700;
 }
-.myHeadingsBlue:before {
+.myHeadingsGray:before {
   content: "";
   position: absolute;
   width: 50%;
   height: 1px;
   bottom: 0;
   left: 25%;
-  border-bottom: 2px solid #1d4ed8;
+  border-bottom: 2px solid #111827;
 }
 
 .myHeadingsSlate {
@@ -41,16 +41,7 @@
   height: 1px;
   bottom: 0;
   left: 25%;
-  border-bottom: 2px solid #f1f5f9;
-}
-
-.pic {
-  border: double 20px transparent;
-  border-radius: 50%;
-  background-image: linear-gradient(white, white),
-    /*here must be*/ linear-gradient(to right, #2563eb, #581c87); /*both gradients*/
-  background-origin: border-box;
-  background-clip: content-box, border-box;
+  border-bottom: 2px solid #f97316;
 }
 
 .fade {
