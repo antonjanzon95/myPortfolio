@@ -4,7 +4,7 @@ interface Props {}
 
 const About: React.FC<Props> = () => {
   return (
-    <div className="container p-6 mx-auto relative max-w-[1024px]">
+    <div className="container p-6 mx-auto relative tablet:max-w-[640px] laptop:max-w-[1024px]">
       <div className="w-full flex justify-center">
         <h2 className="myHeadingsGray my-4">About</h2>
       </div>

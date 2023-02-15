@@ -8,6 +8,29 @@
   box-sizing: border-box;
 }
 
+.hoverUnderline {
+  font-size: 1.5rem /* 24px */;
+  line-height: 2rem /* 32px */;
+  display: inline-block;
+  padding-bottom: 3px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.hoverUnderline:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: 0;
+  border-bottom: 2px solid white;
+  transition: all 0.3s;
+}
+
+.hoverUnderline:hover::before {
+  width: 100%;
+}
+
 .myHeadingsGray {
   font-size: 1.5rem /* 24px */;
   line-height: 2rem /* 32px */;
@@ -44,12 +67,25 @@
   border-bottom: 2px solid #f97316;
 }
 
-.fade {
+.fade-left {
   opacity: 0;
+  transform: translateX(-200px);
   transition: all 2s;
 }
 
-.fade.show {
+.fade-left.show {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.fade-right {
+  opacity: 0;
+  transform: translateX(200px);
+  transition: all 2s;
+}
+
+.fade-right.show {
+  transform: translateX(0px);
   opacity: 1;
 }
 

@@ -6,11 +6,13 @@ interface Props {
 }
 
 const laptopLayout =
-  "laptop:fixed laptop:h-screen laptop:w-16 laptop:top-0 laptop:right-0 laptop:flex laptop:flex-col laptop:items-center laptop:justify-center laptop:gap-0 laptop:bg-transparent laptop:z-10";
+  "laptop:fixed laptop:h-screen laptop:w-16 laptop:top-0 laptop:py-0 laptop:right-0 laptop:flex laptop:flex-col laptop:items-center laptop:justify-center laptop:gap-0 laptop:bg-transparent laptop:z-10";
 
 const SideBar: React.FC = () => {
   return (
-    <div className={`flex justify-center items-center gap-4 ${laptopLayout}`}>
+    <div
+      className={`bg-gray-800 py-4 flex justify-center items-center gap-4 ${laptopLayout}`}
+    >
       <SideBarIcon icon={<FaFacebook size={24} color="blue" />} />
       <SideBarIcon icon={<FaLinkedin size={24} color="blue" />} />
       <SideBarIcon icon={<FaGithub size={24} />} />
