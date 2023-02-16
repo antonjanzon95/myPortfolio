@@ -15,7 +15,7 @@ function App() {
       <header className="h-24 bg-gray-900 text-orange-500 hidden laptop:flex laptop:items-center fixed top-0 w-full z-20">
         <Header />
       </header>
-      <header className="h-16 bg-gray-900 text-orange-500 block laptop:hidden fixed top-0 w-full z-20">
+      <header className="h-16 bg-gray-900 text-orange-500 block laptop:hidden fixed w-full top-0 z-20">
         <MobileHeader />
       </header>
       <main className="hidden laptop:block w-full bg-gradient-to-b from-gray-900 to-gray-800 text-orange-500">

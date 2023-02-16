@@ -11,17 +11,17 @@ const Header: React.FC<Props> = () => {
         </li>
         <li className="hover:text-gray-100 hoverUnderline">
           <a className="" href="">
+            About
+          </a>
+        </li>
+        <li className="hover:text-gray-100 hoverUnderline">
+          <a className="" href="">
             Projects
           </a>
         </li>
         <li className="hover:text-gray-100 hoverUnderline">
           <a className="" href="">
             Skills
-          </a>
-        </li>
-        <li className="hover:text-gray-100 hoverUnderline">
-          <a className="" href="">
-            About
           </a>
         </li>
       </ul>

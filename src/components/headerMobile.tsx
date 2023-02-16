@@ -27,13 +27,13 @@ const MobileHeader: React.FC<Props> = () => {
           Home
         </a>
         <a href="#" className="block px-4 py-2">
+          About
+        </a>
+        <a href="#" className="block px-4 py-2">
           Projects
         </a>
         <a href="#" className="block px-4 py-2">
           Skills
-        </a>
-        <a href="#" className="block px-4 py-2">
-          About
         </a>
       </div>
     </nav>

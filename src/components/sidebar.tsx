@@ -13,9 +13,9 @@ const SideBar: React.FC = () => {
     <div
       className={`bg-gray-800 py-4 flex justify-center items-center gap-4 ${laptopLayout}`}
     >
-      <SideBarIcon icon={<FaFacebook size={24} color="blue" />} />
-      <SideBarIcon icon={<FaLinkedin size={24} color="blue" />} />
-      <SideBarIcon icon={<FaGithub size={24} />} />
+      <SideBarIcon icon={<FaFacebook size={32} color="blue" />} />
+      <SideBarIcon icon={<FaLinkedin size={32} color="blue" />} />
+      <SideBarIcon icon={<FaGithub size={32} />} />
     </div>
   );
 };

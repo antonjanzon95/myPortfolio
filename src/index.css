@@ -69,7 +69,7 @@
 
 .fade-left {
   opacity: 0;
-  transform: translateX(-200px);
+  transform: translateX(-50px);
   transition: all 2s;
 }
 
@@ -80,7 +80,7 @@
 
 .fade-right {
   opacity: 0;
-  transform: translateX(200px);
+  transform: translateX(50px);
   transition: all 2s;
 }
 
@@ -92,9 +92,14 @@
 @layer components {
   .sidebar-icon {
     @apply relative flex items-center justify-center 
-    h-10 w-10 mt-2 mb-2 mx-0 bg-slate-300 text-black 
+    h-12 w-12 mt-2 mb-2 mx-0 bg-slate-300 text-black 
     hover:rounded-xl transition-all duration-300 ease-linear
     rounded-3xl cursor-pointer;
+  }
+
+  .bg-transparent-icon {
+    @apply relative flex items-center justify-center
+    h-7 w-7 mx-0 bg-transparent;
   }
 
   .javascript-icon {
@@ -107,7 +112,7 @@
     h-11 w-11 mx-0 bg-black;
   }
 
-  .bg-transparent-icon {
+  .bg-transparent-icon2 {
     @apply relative flex items-center justify-center
     h-11 w-11 mx-0 bg-transparent;
   }
