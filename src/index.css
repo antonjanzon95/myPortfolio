@@ -92,9 +92,18 @@
 @layer components {
   .sidebar-icon {
     @apply relative flex items-center justify-center 
-    h-12 w-12 mt-2 mb-2 mx-0 bg-slate-300 text-black 
+    h-11 w-11 mt-2 mb-2 mx-0 bg-slate-300 text-black 
     hover:rounded-xl transition-all duration-300 ease-linear
     rounded-3xl cursor-pointer;
+  }
+
+  @media (min-width: 1024px) {
+    .sidebar-icon {
+      @apply relative flex items-center justify-center 
+      h-12 w-12 mt-2 mb-2 mx-0 bg-slate-300 text-black 
+      hover:rounded-xl transition-all duration-300 ease-linear
+      rounded-3xl cursor-pointer;
+    }
   }
 
   .bg-transparent-icon {

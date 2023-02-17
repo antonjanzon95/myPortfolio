@@ -1,9 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
-interface Props {}
+interface Props {
+  headerHeight: number;
+  sectionIDs: string[];
+}
 
-const MobileHeader: React.FC<Props> = () => {
+const MobileHeader: React.FC<Props> = (props: Props) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleTopClick = () => {
+    scroll.scrollToTop({ duration: 500, smooth: true });
+  };
+
   return (
     <nav className="flex items-center justify-between p-4 w-full h-full">
       <a href="#" className="font-bold text-lg text-orange-500">
@@ -20,21 +29,28 @@ const MobileHeader: React.FC<Props> = () => {
 
       <div
         className={`${
-          isOpen ? "scale-100" : "scale-0"
-        } absolute top-0 right-0 bg-white text-gray-900 p-4 mt-16 rounded-lg shadow-xl transition duration-300 ease-in-out`}
+          isOpen ? "scale-0" : "scale-100"
+        } absolute opacity-90 top-0 right-0 bg-gray-100 text-gray-900 p-4 mt-16 shadow-xl transition duration-300 ease-in-out flex flex-col justify-center items-center`}
       >
-        <a href="#" className="block px-4 py-2">
+        <Link
+          to="top"
+          onClick={handleTopClick}
+          className="block px-4 py-2"
+          key="top"
+        >
           Home
-        </a>
-        <a href="#" className="block px-4 py-2">
-          About
-        </a>
-        <a href="#" className="block px-4 py-2">
-          Projects
-        </a>
-        <a href="#" className="block px-4 py-2">
-          Skills
-        </a>
+        </Link>
+        {props.sectionIDs.map((id) => (
+          <Link
+            to={id}
+            smooth={true}
+            offset={-props.headerHeight}
+            className="block px-4 py-2"
+            key={id}
+          >
+            {id.charAt(0).toUpperCase() + id.slice(1)}
+          </Link>
+        ))}
       </div>
     </nav>
   );

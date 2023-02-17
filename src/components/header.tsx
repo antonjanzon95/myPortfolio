@@ -1,30 +1,39 @@
-interface Props {}
+import { Link, animateScroll as scroll } from "react-scroll";
 
-const Header: React.FC<Props> = () => {
+interface Props {
+  headerHeight: number;
+  sectionIDs: string[];
+}
+
+const Header: React.FC<Props> = (props: Props) => {
+  const handleTopClick = () => {
+    scroll.scrollToTop({ duration: 500, smooth: true });
+  };
+
   return (
     <nav className="relative w-full flex justify-center items-center">
-      <ul className="flex text-sm font-semibold gap-12 items-center">
-        <li className="hover:text-gray-100 hoverUnderline">
-          <a className="" href="">
-            Home
-          </a>
-        </li>
-        <li className="hover:text-gray-100 hoverUnderline">
-          <a className="" href="">
-            About
-          </a>
-        </li>
-        <li className="hover:text-gray-100 hoverUnderline">
-          <a className="" href="">
-            Projects
-          </a>
-        </li>
-        <li className="hover:text-gray-100 hoverUnderline">
-          <a className="" href="">
-            Skills
-          </a>
-        </li>
-      </ul>
+      <div className="flex text-sm font-semibold gap-12 items-center">
+        <Link
+          to="top"
+          onClick={handleTopClick}
+          className="hover:text-gray-100 hoverUnderline cursor-pointer"
+          key="top"
+          aria-label="Go to the home page"
+        >
+          Home
+        </Link>
+        {props.sectionIDs.map((id) => (
+          <Link
+            to={id}
+            smooth={true}
+            offset={-props.headerHeight}
+            className="hover:text-gray-100 hoverUnderline cursor-pointer"
+            key={id}
+          >
+            {id.charAt(0).toUpperCase() + id.slice(1)}
+          </Link>
+        ))}
+      </div>
     </nav>
   );
 };

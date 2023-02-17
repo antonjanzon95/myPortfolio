@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import Header from "./components/header";
 import MobileHeader from "./components/headerMobile";
 import Main from "./components/main";
@@ -13,10 +12,16 @@ function App() {
   return (
     <div className="">
       <header className="h-24 bg-gray-900 text-orange-500 hidden laptop:flex laptop:items-center fixed top-0 w-full z-20">
-        <Header />
+        <Header
+          headerHeight={96}
+          sectionIDs={["about", "projects", "skills"]}
+        />
       </header>
       <header className="h-16 bg-gray-900 text-orange-500 block laptop:hidden fixed w-full top-0 z-20">
-        <MobileHeader />
+        <MobileHeader
+          headerHeight={64}
+          sectionIDs={["about", "projects", "skills"]}
+        />
       </header>
       <main className="hidden laptop:block w-full bg-gradient-to-b from-gray-900 to-gray-800 text-orange-500">
         <Main />
@@ -24,19 +29,21 @@ function App() {
       <main className="block laptop:hidden w-full bg-gradient-to-b from-gray-900 to-gray-800 text-orange-500">
         <MainMobile />
       </main>
-      <section className="w-full bg-gray-100 text-gray-800">
+      <section id="about" className="w-full bg-gray-100 text-gray-800">
         <About />
       </section>
-      <section className="w-full bg-gray-800 text-gray-100">
+      <section id="projects" className="w-full bg-gray-800 text-gray-100">
         <Projects />
       </section>
-      <section className="w-full bg-gray-100 text-gray-800">
+      <section id="skills" className="w-full bg-gray-100 text-gray-800">
         <Skills />
       </section>
-      <section className="w-full bg-gray-800 text-gray-100">
+      <aside className="hidden laptop:block">
+        <SideBar size={32} />
+      </aside>
+      <footer id="contact" className="w-full bg-gray-800 text-gray-100">
         <Contact />
-      </section>
-      <SideBar />
+      </footer>
     </div>
   );
 }
