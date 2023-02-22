@@ -12,7 +12,7 @@ const laptopLayout =
 const SideBar: React.FC<Props> = ({ size }) => {
   return (
     <div
-      className={`bg-gray-800 py-4 flex justify-center items-center gap-4 ${laptopLayout}`}
+      className={`bg-gray-800 pt-4 flex justify-center items-center gap-4 ${laptopLayout}`}
     >
       <SideBarIcon
         icon={<FaFacebook size={size} color="blue" />}

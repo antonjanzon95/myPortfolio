@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 interface Props {
@@ -15,9 +15,7 @@ const MobileHeader: React.FC<Props> = (props: Props) => {
 
   return (
     <nav className="flex items-center justify-between p-4 w-full h-full">
-      <a href="#" className="font-bold text-lg text-orange-500">
-        AJ
-      </a>
+      <img src="/AJ-logo.svg" alt="Logo" className="w-16" />
       <button
         className="focus:outline-none text-orange-500"
         onClick={() => setIsOpen(!isOpen)}
