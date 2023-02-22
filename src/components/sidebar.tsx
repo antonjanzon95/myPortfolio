@@ -15,10 +15,6 @@ const SideBar: React.FC<Props> = ({ size }) => {
       className={`bg-gray-800 pt-4 flex justify-center items-center gap-4 ${laptopLayout}`}
     >
       <SideBarIcon
-        icon={<FaFacebook size={size} color="blue" />}
-        link={"https://www.facebook.com/anton.janzon.9"}
-      />
-      <SideBarIcon
         icon={<FaLinkedin size={size} color="blue" />}
         link={"https://www.linkedin.com/in/anton-janzon-55aaa7162/"}
       />
