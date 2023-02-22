@@ -27,7 +27,7 @@ const MobileHeader: React.FC<Props> = (props: Props) => {
 
       <div
         className={`${
-          isOpen ? "scale-0" : "scale-100"
+          isOpen ? "scale-100" : "scale-0"
         } absolute opacity-90 top-0 right-0 bg-gray-100 text-gray-900 p-4 mt-16 shadow-xl transition duration-300 ease-in-out flex flex-col justify-center items-center`}
       >
         <Link
