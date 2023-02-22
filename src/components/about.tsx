@@ -23,9 +23,9 @@ const About: React.FC<Props> = () => {
         </div>
         <div className="laptop:flex items-center laptop:w-2/12">
           <img
-            src="/about-img.webp"
+            src="/about-pic.png"
             className="pic w-[180px] mx-auto rounded-[50%]"
-            alt="Smiling man with black and white shirt"
+            alt="Smiling man with burgundy shirt"
           />
         </div>
         <span className="block laptop:hidden text-center font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-orange-600 to-gray-900">
