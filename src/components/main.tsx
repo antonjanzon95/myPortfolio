@@ -19,7 +19,13 @@ const Main: React.FC<Props> = () => {
             </h3>
           </div>
 
-          <img src="/self-portrait.webp" className="w-[280px] mx-auto" alt="" />
+          <img
+            src="/self-portrait.webp"
+            width={892}
+            height={760}
+            className="w-[400px] mx-auto"
+            alt="Smiling man with orange shirt"
+          />
         </div>
       </div>
     </div>
