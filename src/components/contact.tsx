@@ -6,12 +6,19 @@ import SideBar from "./sidebar";
 const Contact = () => {
   return (
     <div className="container mx-auto relative">
-      <div className="flex flex-col  justify-center items-center gap-4 p-10">
+      <div className="flex flex-col justify-center items-center gap-4 pt-10 pb-4">
         <a
           href="mailto:anton.janzon@medieinstitutet.se"
-          className="p-3 border-solid border-2 border-gray-900 font-bold text-xl text-gray-100 bg-gradient-to-r from-orange-600 to-orange-700 hover:from-orange-900 hover:to-orange-800"
+          className="w-[188px] py-3 text-center border-solid border-2 border-gray-900 font-bold text-xl text-gray-100 bg-gradient-to-r from-orange-600 to-orange-700 hover:from-orange-900 hover:to-orange-800"
         >
           Reach out to me!
+        </a>
+        <a
+          href="/Resume-Anton-Janzon.pdf"
+          className="w-[188px] py-3 text-center border-solid border-2 border-gray-900 font-bold text-xl text-gray-100 bg-gradient-to-r from-orange-600 to-orange-700 hover:from-orange-900 hover:to-orange-800"
+          target="_blank"
+        >
+          View resume
         </a>
         <SideBar size={32} />
       </div>
