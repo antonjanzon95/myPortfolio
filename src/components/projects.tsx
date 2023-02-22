@@ -27,7 +27,7 @@ const Projects = () => {
                 Donut Webshop
               </h3>
               <p className="font-normal text-slate-700">
-                A simple webshop with list of products, cart & payment form.
+                Webshop with list of sortable products, cart & payment form.
               </p>
               <div className="flex gap-1 items-center justify-end my-0 mt-6">
                 <TechnologyIcon
@@ -110,8 +110,7 @@ const Projects = () => {
                 Nothing Phone
               </h3>
               <p className="font-normal text-slate-700">
-                Developed the website by utilizing a design and graphical
-                profile that was provided.
+                Developed according to given design and graphical profile.
               </p>
               <div className="flex gap-1 items-center justify-end my-0 mt-6">
                 <TechnologyIcon
@@ -150,7 +149,9 @@ const Projects = () => {
               <h3 className="mb-2 text-xl font-bold tracking-tight text-slate-900">
                 To The Moon!
               </h3>
-              <p className="font-normal text-slate-700">Design project.</p>
+              <p className="font-normal text-slate-700">
+                Developed according to given design.
+              </p>
               <div className="flex gap-1 items-center justify-end my-0 mt-6">
                 <TechnologyIcon
                   icon={<SiHtml5 size={28} color="#f05c2a" />}
