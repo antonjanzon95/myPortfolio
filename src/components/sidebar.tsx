@@ -17,10 +17,12 @@ const SideBar: React.FC<Props> = ({ size }) => {
       <SideBarIcon
         icon={<FaLinkedin size={size} color="blue" />}
         link={"https://www.linkedin.com/in/anton-janzon-55aaa7162/"}
+        description={"Linkedin Profile"}
       />
       <SideBarIcon
         icon={<FaGithub size={size} />}
         link={"https://github.com/antonjanzon95"}
+        description={"Github Profile"}
       />
     </div>
   );
