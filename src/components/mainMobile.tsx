@@ -23,7 +23,7 @@ const MainMobile: React.FC<Props> = () => {
           width={892}
           height={760}
           className="w-[280px] mx-auto"
-          alt=""
+          alt="Smiling man with orange shirt"
         />
       </div>
     </div>
