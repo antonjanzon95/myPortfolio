@@ -29,9 +29,9 @@ const About: React.FC<Props> = () => {
         </div>
         <div className="laptop:flex items-center laptop:w-2/12">
           <img
-            src="about-img.png"
-            className="pic w-[180px] mx-auto border-gray-900 border-[7px] border-solid rounded-[50%]"
-            alt="Portrait of person wearing orange shirt"
+            src="/about-img.webp"
+            className="pic w-[180px] mx-auto rounded-[50%]"
+            alt="Smiling man with black and white shirt"
           />
         </div>
         <div className="laptop:w-5/12">

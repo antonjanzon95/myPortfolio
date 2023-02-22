@@ -18,7 +18,7 @@ const MainMobile: React.FC<Props> = () => {
           </h3>
         </div>
 
-        <img src="self-portrait.png" className="w-[280px] mx-auto" alt="" />
+        <img src="/self-portrait.webp" className="w-[280px] mx-auto" alt="" />
       </div>
     </div>
   );
