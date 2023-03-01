@@ -8,7 +8,7 @@ const Contact = () => {
     <div className="container mx-auto relative">
       <div className="flex flex-col justify-center items-center gap-4 pt-10 pb-4">
         <a
-          href="mailto:anton.janzon@medieinstitutet.se"
+          href="mailto:antonjanzon123@gmail.com"
           className="w-[188px] py-3 text-center border-solid border-2 border-gray-900 font-bold text-xl text-gray-100 bg-gradient-to-r from-orange-600 to-orange-700 hover:from-orange-900 hover:to-orange-800"
         >
           Reach out to me!
