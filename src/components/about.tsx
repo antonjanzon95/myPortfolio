@@ -28,12 +28,6 @@ const About: React.FC<Props> = () => {
             alt="Smiling man with burgundy shirt"
           />
         </div>
-        <span className="block laptop:hidden text-center font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-orange-600 to-gray-900">
-          <em>
-            I am actively seeking an internship opportunity from October 23 to
-            December 29.
-          </em>
-        </span>
         <div className="laptop:w-5/12">
           <p className="mb-2">
             I understand the importance of hands-on experience in the field and
@@ -49,12 +43,12 @@ const About: React.FC<Props> = () => {
           </p>
         </div>
       </div>
-      <span className="hidden laptop:block text-center mt-7 font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-orange-600 to-gray-900">
+      {/* <span className="hidden laptop:block text-center mt-7 font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-orange-600 to-gray-900">
         <em>
           I am actively seeking an internship opportunity from October 23 to
           December 29.
         </em>
-      </span>
+      </span> */}
     </div>
   );
 };
