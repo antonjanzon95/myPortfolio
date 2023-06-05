@@ -18,7 +18,7 @@
 }
 
 .hoverUnderline:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 0%;
   height: 1px;
@@ -40,7 +40,7 @@
   font-weight: 700;
 }
 .myHeadingsGray:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 50%;
   height: 1px;
@@ -58,7 +58,7 @@
   font-weight: 700;
 }
 .myHeadingsSlate:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 50%;
   height: 1px;
@@ -125,6 +125,11 @@
     @apply relative flex items-center justify-center
     h-11 w-11 mx-0 bg-transparent;
   }
+
+  /* .bg-transparent-icon-vue {
+    @apply relative flex items-center justify-center
+    h-11 w-11 mx-0 bg-[#3fb27f];
+  } */
 
   .bg-white-icon {
     @apply relative flex items-center justify-center
