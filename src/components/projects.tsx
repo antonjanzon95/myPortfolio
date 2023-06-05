@@ -19,12 +19,12 @@ const Projects = () => {
       <div className='my-6 flex flex-col items-center justify-center gap-10'>
         <div className='flex flex-col laptop:flex-row laptop:justify-center gap-10'>
           <a
-            href='https://glistening-tapioca-e79f13.netlify.app/'
+            href='https://splendorous-faloodeh-357859.netlify.app/'
             target='_blank'
             className='block max-w-[340px] laptop:max-w-sm bg-slate-100 shadow hover:bg-slate-200 hover:scale-105 transition-all duration-300'
           >
             <img
-              src='public/tictactoe.png'
+              src='/tictactoe.png'
               alt='TicTacToe image'
               className='h-[200px]'
               width={384}
